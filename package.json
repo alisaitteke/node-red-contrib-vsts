@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-vsts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Ali Sait TEKE <alisaitt@gmail.com>",
   "license": "ISC",
   "maintainers": [
