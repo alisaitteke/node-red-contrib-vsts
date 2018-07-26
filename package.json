@@ -1,6 +1,22 @@
 {
   "name": "node-red-contrib-vsts",
   "version": "0.0.1",
+  "author": "Ali Sait TEKE <alisaitt@gmail.com>",
+  "license": "ISC",
+  "maintainers": [
+    {
+      "name": "Ali Sait TEKE",
+      "email": "alisaitt@gmail.com",
+      "web": "http://alisait.com"
+    }
+  ],
+  "keywords": [
+    "node-red"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alisaitteke/node-red-contrib-vsts"
+  },
   "node-red": {
     "nodes": {
       "vsts-service": "connection/index.js"
