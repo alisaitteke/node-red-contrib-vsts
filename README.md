@@ -1,2 +1,7 @@
 # node-red-contrib-vsts
 Node Red Visual Studio Team Services Api
+
+
+[![GitHub version](https://img.shields.io/github/release/alisaitteke/node-red-contrib-vsts.svg)](https://github.com/alisaitteke/node-red-contrib-vsts/releases/latest)
+[![GitHub download](https://img.shields.io/github/downloads/alisaitteke/node-red-contrib-vsts/total.svg)](https://github.com/alisaitteke/node-red-contrib-vsts/releases/latest)
+[![License](https://img.shields.io/github/license/alisaitteke/node-red-contrib-vsts.svg)](https://github.com/alisaitteke/node-red-contrib-vsts/blob/development/LICENSE.txt)
