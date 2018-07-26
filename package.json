@@ -1,5 +1,6 @@
 {
   "name": "node-red-contrib-vsts",
+  "version": "0.0.1",
   "node-red": {
     "nodes": {
       "vsts-service": "connection/index.js"
