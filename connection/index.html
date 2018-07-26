@@ -1,0 +1,88 @@
+<script type="text/x-red" data-template-name="vsts-service">
+    <div class="form-row">
+        <label for="node-input-connection">
+        <i class="fa fa-rocket"></i>
+        Connection</label>
+        <input id="node-input-connection">
+    </div>
+
+
+    <div class="form-row">
+        <label for="node-input-name">
+            <i class="fa fa-tag"></i>
+            Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="vsts-service">
+
+</script>
+
+<script type="text/x-red" data-template-name="vsts-connection">
+    <div class="form-row">
+        <label for="node-config-input-serverAddress">Address</label>
+        <input type="text" id="node-config-input-serverAddress" placeholder="https://fabrikam.visualstudio.com/defaultcollection">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-serverToken">Token</label>
+        <input type="text" id="node-config-input-serverToken" placeholder="cbdeb34vzyuk5l4gxc4qfczn3lko3avfkfqyb47etahq6axpcqha">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-serverProject">Project</label>
+        <input type="text" id="node-config-input-serverProject" placeholder="web.ui">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="vsts-connection">
+
+</script>
+
+
+<script type="text/javascript">
+    RED.nodes.registerType('vsts-service', {
+        category: 'Visual Studio Online',
+        color: "#d8c4de",
+        paletteLabel: 'Run',
+        defaults: {
+            connection: {
+                value: "",
+                type: "vsts-connection",
+                required: true
+            },
+            name: {
+                value: ""
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "vsts.png",
+        label: function () {
+            return this.name || "Service";
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('vsts-connection', {
+        category: 'config',
+        defaults: {
+            serverAddress: {
+                value: "",
+                required: true
+            },
+            serverToken: {
+                value: "",
+                required: true
+            },
+            serverProject: {
+                value: "",
+                required: true
+            }
+        },
+        label: function () {
+            return this.serverAddress || "Connection";
+        }
+    });
+</script>
